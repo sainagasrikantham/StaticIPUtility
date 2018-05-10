@@ -1,0 +1,228 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\StaticIPAutomationUtility.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StaticIPAutomationUtility.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About StaticIPAutomationUtility"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "StaticIPAutomationUtility Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_STATICIPAUTOMATIONUTILITY_DIALOG DIALOGEX 0, 0, 335, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Static IP Automation Utility"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply IP Config",IDC_BUTTON_ACTIVATE_HOME_IP_SETTINGS,11,209,67,14,0,WS_EX_STATICEDGE
+    GROUPBOX        "Home Settings",IDC_STATIC,7,40,155,195
+    GROUPBOX        "Office Settings",IDC_STATIC,167,40,161,196
+    CONTROL         "",IDC_IPADDRESS_HOME_IPADDRESS,"SysIPAddress32",WS_TABSTOP,55,59,100,15
+    CTEXT           "IP Address",IDC_STATIC,15,53,36,8
+    CTEXT           "Subnet Mask",IDC_STATIC,12,78,47,8
+    CONTROL         "",IDC_IPADDRESS_HOME_SUBNET_MASK,"SysIPAddress32",WS_TABSTOP,55,86,100,15
+    CTEXT           "Default Gateway",IDC_STATIC,12,103,59,8
+    CONTROL         "",IDC_IPADDRESS_HOME_DEFAULT_GATEWAY,"SysIPAddress32",WS_TABSTOP,55,113,100,15
+    CTEXT           "Preferred DNS Server",IDC_STATIC,10,130,78,8
+    CONTROL         "",IDC_IPADDRESS_HOME_PREFERRED_DNS,"SysIPAddress32",WS_TABSTOP,55,139,100,15
+    CTEXT           "Alternate DNS Server",IDC_STATIC,12,158,76,8
+    CONTROL         "",IDC_IPADDRESS_HOME_ALTERNATE_DNS,"SysIPAddress32",WS_TABSTOP,55,167,100,15
+    CONTROL         "",IDC_IPADDRESS_OFFICE_IPADDRESS,"SysIPAddress32",WS_TABSTOP,216,59,100,15
+    CTEXT           "IP Address",IDC_STATIC,176,52,36,8
+    CTEXT           "Subnet Mask",IDC_STATIC,175,78,44,8
+    CONTROL         "",IDC_IPADDRESS_OFFICE_SUBNET_MASK,"SysIPAddress32",WS_TABSTOP,216,86,100,15
+    CTEXT           "Default Gateway",IDC_STATIC,172,103,63,8
+    CONTROL         "",IDC_IPADDRESS_OFFICE_DEFAULT_GATEWAY,"SysIPAddress32",WS_TABSTOP,216,113,100,15
+    CTEXT           "Preferred DNS Server",IDC_STATIC,173,129,78,8
+    CONTROL         "",IDC_IPADDRESS_OFFICE_PREFERRED_DNS,"SysIPAddress32",WS_TABSTOP,216,139,100,15
+    CTEXT           "Alternate DNS Server",IDC_STATIC,175,158,74,8
+    CONTROL         "",IDC_IPADDRESS_OFFICE_ALTERNATE_DNS,"SysIPAddress32",WS_TABSTOP,216,167,100,15
+    PUSHBUTTON      "Apply DNS Config",IDC_BUTTON_ACTIVATE_HOME_DNS_SETTINGS,83,209,73,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Apply IP Config",IDC_BUTTON_ACTIVATE_OFFICE_IP_SETTINGS,173,209,67,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Apply DNS Config",IDC_BUTTON_ACTIVATE_OFFICE_DNS_SETTINGS,245,209,73,14,0,WS_EX_STATICEDGE
+    CTEXT           "Status         : ",IDC_STATIC,13,192,48,8
+    CTEXT           "Status         : ",IDC_STATIC,175,192,48,8
+    LTEXT           "Static",IDC_STATUS_OFFICE,244,192,46,8
+    LTEXT           "Static",IDC_STATUS_HOME,85,192,37,8
+    CTEXT           "LAN Connection Name",IDC_STATIC,15,20,72,8
+    GROUPBOX        "LAN Connection",IDC_STATIC,7,3,321,35
+    EDITTEXT        IDC_EDIT_LAN_CONNECTION_NAME,92,17,129,14,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE | 0x10000000L
+    CTEXT           "LAN Connection Name",IDC_STATIC_INPUT_CHECK,226,20,95,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Sainagakishore Srikantham (ssn.kishore@gmail.com)"
+            VALUE "FileDescription", "Static IP Automatic Configuration"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Static IP Automation Utility"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "StaticIPAutomationUtility.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STATICIPAUTOMATIONUTILITY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About StaticIPAutomationUtility..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\StaticIPAutomationUtility.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
